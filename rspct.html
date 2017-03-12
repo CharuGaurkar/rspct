@@ -9,9 +9,16 @@
         <meta name="author" content="RESPCT event, Charu Gaurkar">
           <meta name="viewport" content="width=device-width, initial-scale=1">
           	<!-- css link-->
-          	<link rel="stylesheet" type="text/css" href="rspct.css">					
-          	
+          	<link rel="stylesheet" type="text/css" href="rspct.css">	
+          	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"> </script> 
+				
+          <script>
+                      $("html, body").animate({
+                       scrollTop: $(document).height() - $(window).height()
+});
+       </script>
 </head>
+
 <body>
 	<div class="container-fluid" id="section">
 		<div class="row">
@@ -20,7 +27,7 @@
 					<p>RSPCT</p>
 					<p>Think Globally,Cycle Locally.</p>
 	
-							<button class="pure-button pure-button-primary">Dive</button>
+							<button class="pure-button pure-button-primary"><a href="#gallery">Dive</a></button>
 				</div>
 			
 		</div>
@@ -28,7 +35,7 @@
 	<!--gallery-->
 <h1>RSPCT EVENT GALLERY</h1>
 
-<div class="gallery cf">
+<div class="gallery cf" id="gallery">
   <div>
     <img src="images/rspct1.jpg" />
   </div>
@@ -49,10 +56,10 @@
   </div>
 </div>
 <!--social-->
-<ul class="social">
-  <li><a href="https://twitter.com/share?url=URLTOSHARE" class="tw" title="Tweet this page!"><i class="icon-twitter"></i></a></li>
-	<li><a href="http://www.facebook.com/sharer.php?u=URLTOSHARE&amp;t=TITLE" class="fb" title="Share this page!"><i class="icon-facebook"></i></a></li>
-	<li><a href="http://plus.google.com/share?url=URLTOSHARE" class="gp" title="Share this page!"><i class="icon-google-plus"></i></a></li>
-</ul>
+<div id="social-icon-wrapper">
+  <a id="twitter" class="social-icon" href="#"></a>
+  <a id="facebook" class="social-icon" href="#"></a>
+  <a id="linkedin" class="social-icon" href="#"></a>
+</div>
 </body>
 </html>
